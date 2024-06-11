@@ -2,7 +2,6 @@ import React from 'react'
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaFacebookSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoDocumentTextSharp } from "react-icons/io5";
 
@@ -34,7 +33,7 @@ function Social() {
       id:3,
       child: (
         <>
-       Resume <FaXTwitter size= {30}/>
+       Resume < IoDocumentTextSharp size= {30}/>
         </>
       ),
       href:"/resume.pdf",
@@ -46,10 +45,10 @@ function Social() {
       id:4,
       child: (
         <>
-       Twitter <FaXTwitter size= {30}/>
+       Email <MdEmail size= {30}/>
         </>
       ),
-      href:"",
+      href:"devtee20@gmail.com",
       style: "rounded-br-md"
     },
 
