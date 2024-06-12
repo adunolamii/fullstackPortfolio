@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import { useNavigate } from 'react-router-dom'
+import pic from '../Components/profile.jpg'
 
 
 function About() {
@@ -10,12 +11,13 @@ function About() {
     <div  className=' h-screen w-full  bg-gradient-to-b from-black to-gray-800 p-4 text-white'>
         <h4 className=' text-white py-1  text-xl font-bold inline border-b-4'>Get to <span className='font-bold text-orange-500 text-2xl'>know Me.</span> </h4>
         <div className=' mt-4 flex'>
-        <div className='relative bg-blue-300 w-64 h-64 rounded-3xl m-auto my-4'>iiiii</div>
+        <div className='relative bg-blue-300 w-64 h-64 rounded-3xl m-auto my-4 rounded-t-10 rounded-b-none rounded-t-full'>
+          <img className=' w-44 h-44 m-auto object-cover mt-16 ' src={pic} alt="" />
+        </div>
         </div>
         <div>
         
-      {/* <h3 className=' text-white font-bold text-2xl'>Adunola Adenike Taiwo</h3> */}
-      <h1 className=' text-white items-center px-10'>I am an expert in <span className='font-bold text-orange-500 text-2xl'>MERN STACK</span>  Development. I design, create and deploy a complete application from scratch to finish with the use of various tools. </h1>
+     <h1 className=' text-white items-center justify-center px-12'>I am an expert in <span className='font-bold text-orange-500 text-2xl'>MERN STACK</span>  Development. I design, create and deploy a complete application from scratch to finish with the use of various tools. </h1>
       </div>
 
       <div className='flex justify-evenly mt-2 group-hover:rotate-90 duration-300'>
