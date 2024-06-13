@@ -2,17 +2,25 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import { useNavigate } from 'react-router-dom'
 import pic from '../Components/profile.jpg'
+// import Typewriter from 'typewriter-effect';
+// import { frame } from 'framer-motion';
+import { PageTransition } from '../Components/PageTransition';
 
 
 function About() {
   const navigate =useNavigate();
 
   return (
-    <div  className=' h-screen w-full  bg-gradient-to-b from-black to-gray-800 p-4 text-white'>
+    <PageTransition>
+
+<div className=' h-screen w-full  bg-gradient-to-b from-black to-gray-800 p-4 text-white'>
+    
+   
+    
         <h4 className=' text-white py-1  text-xl font-bold inline border-b-4'>Get to <span className='font-bold text-orange-500 text-2xl'>know Me.</span> </h4>
         <div className=' mt-4 flex'>
         <div className='relative bg-blue-300 w-64 h-64 rounded-3xl m-auto my-4 rounded-t-10 rounded-b-none rounded-t-full'>
-          <img className=' w-44 h-44 m-auto object-cover mt-16 ' src={pic} alt="" />
+          <img className='w-44 h-44 m-auto object-cover mt-16 ' src={pic} alt="" />
         </div>
         </div>
         <div>
@@ -27,9 +35,9 @@ function About() {
    
       <Navbar className='  mt-3'/>
 
-
-  
-    </div>
+    
+      </div>
+      </PageTransition>
   )
 }
 

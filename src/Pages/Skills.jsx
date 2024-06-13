@@ -1,4 +1,5 @@
 import React from 'react'
+import { PageTransition } from '../Components/PageTransition'
 import Navbar from '../Components/Navbar'
 import  image1  from "../Components/react2.png"
 import  image2  from "../Components/javascript.png"
@@ -50,13 +51,14 @@ function Skills() {
 
   ]
   return (
+    <PageTransition>
     <div className=' w-full  bg-gradient-to-b from-black to-gray-800  text-white'> 
 <div className='w-full grid grid-cols-2 gap-8 text-center py-2 px-12'> </div>
 <p className=' text-2xl font-bold border-b-4 border-orange-400  inline'>Experiences</p>
 {/* <p>These are the Technologies I have worked with.</p> */}
 
 
- <div className=' w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0'>
+ <div className=' w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-5 px-16 sm:px-0'>
   
   
   {
@@ -72,18 +74,11 @@ key={id}
     ))
   }
 
-<Navbar className='px-4  '/>
-
+<Navbar className=''/>
   
  </div>
-
-
-
-
-    
-    
-    </div>
-    
+</div>
+    </PageTransition> 
    
   )
 }
