@@ -8,6 +8,7 @@ import Skills from './Pages/Skills';
 import About from './Pages/About';
 import Social from './Components/Social';
 import { AnimatePresence } from 'framer-motion';
+import PdfViwer from './Components/PdfViwer';
 // import { PageTransition } from './Components/PageTransition';
 // import { frame } from 'framer-motion';
 
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="App">
       {/* <Router> */}
+      {/* <PdfViwer/> */}
          <Social/>
          {/* <PageTransition/> */}
          <AnimatePresence initial = {false}>

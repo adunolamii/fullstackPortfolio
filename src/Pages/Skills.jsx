@@ -7,6 +7,8 @@ import  image3  from "../Components/tailwind.png"
 import  image4  from "../Components/mongodb.png"
 import  image5  from "../Components/github.png"
 import  image6  from "../Components/node.png"
+import  image7  from "../Components/express.png"
+import  image8   from "../Components/postman.png"
 
 function Skills() {
 
@@ -27,13 +29,13 @@ function Skills() {
     {
       id: 3,
       src: image3,
-      title: "TAILWIND",
+      title: "TAILWIND CSS",
       style: "shadow-blue-900"
     },
     {
       id: 4,
       src: image6,
-      title: "NODEJS",
+      title: "NODE JS",
       style: "shadow-green-500"
     },
     {
@@ -44,42 +46,53 @@ function Skills() {
     },
     {
       id: 6,
+      src: image7,
+      title: "EXPRESS JS",
+      style: "shadow-green-800"
+    },
+    {
+      id: 7,
       src: image5,
       title: "GITHUB",
-      style: "shadow-black"
-    }
+      style: "shadow-green-800"
+    },
+    {
+      id: 8,
+      src: image8,
+      title: "POSTMAN",
+      style: "shadow-red-800"
+    },
 
   ]
   return (
     <PageTransition>
-    <div className=' w-full  bg-gradient-to-b from-black to-gray-800  text-white'> 
-<div className='w-full grid grid-cols-2 gap-8 text-center py-2 px-12'> </div>
-<p className=' text-2xl font-bold border-b-4 border-orange-400  inline'>Experiences</p>
+    <div className=' w-full  bg-gradient-to-b from-black to-gray-800  text-white top-0'> 
+{/* <div className='w-full grid grid-cols-2 gap-8 text-center py-5 px-12'> </div> */}
+<p className=' text-2xl font-bold border-b-4 border-y-pink-500 inline top-0'>Experiences</p>
 {/* <p>These are the Technologies I have worked with.</p> */}
 
 
- <div className=' w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-5 px-16 sm:px-0'>
+ <div className=' w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center  px-16 sm:px-0 top-0'>
   
   
   {
     techs.map(({id, src, title, style})=>(
 <div
 key={id}
- className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+ className={` h-28 top-0 shadow-md hover:scale-105 duration-500 rounded-lg ${style}`}
  >
-    <img src={src} alt="" className=' w-20 mx-auto' />
-    <p className='font-bold mt-4'>{title}</p>
+    <img src={src} alt="" className=' top-0 w-20 mx-auto' />
+    <p className=' h-4 top-0 font-bold '>{title}</p>
+   
 
 </div>
     ))
   }
-
-<Navbar className=''/>
-  
- </div>
+ </div> 
+ <Navbar className=''/>
 </div>
     </PageTransition> 
-   
+
   )
 }
 
