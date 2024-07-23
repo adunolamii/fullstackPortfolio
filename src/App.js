@@ -8,20 +8,14 @@ import Skills from './Pages/Skills';
 import About from './Pages/About';
 import Social from './Components/Social';
 import { AnimatePresence } from 'framer-motion';
-import PdfViwer from './Components/PdfViwer';
-// import { PageTransition } from './Components/PageTransition';
-// import { frame } from 'framer-motion';
-
-
 
 function App() {
   const location = useLocation()
   return (
     <div className="App">
-      {/* <Router> */}
-      {/* <PdfViwer/> */}
+     
          <Social/>
-         {/* <PageTransition/> */}
+        
          <AnimatePresence initial = {false}>
             <Routes location={location} key={location.pathname}>
                    <Route path="/"  element={<Home/>}/>
@@ -32,7 +26,7 @@ function App() {
 
             </Routes>
             </AnimatePresence>
-     {/* </Router> */}
+    
      
     </div>
   );

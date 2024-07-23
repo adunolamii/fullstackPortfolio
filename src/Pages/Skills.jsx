@@ -9,6 +9,7 @@ import  image5  from "../Components/github.png"
 import  image6  from "../Components/node.png"
 import  image7  from "../Components/express.png"
 import  image8   from "../Components/postman.png"
+import Flip from 'react-reveal/Flip';
 
 function Skills() {
 
@@ -71,7 +72,7 @@ function Skills() {
 <p className=' text-2xl font-bold border-b-4 border-y-pink-500 inline top-0'>Experiences</p>
 {/* <p>These are the Technologies I have worked with.</p> */}
 
-
+<Flip>
  <div className=' w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center  px-16 sm:px-0 top-0'>
   
   
@@ -89,6 +90,7 @@ key={id}
     ))
   }
  </div> 
+ </Flip>
  <Navbar className=''/>
 </div>
     </PageTransition> 
