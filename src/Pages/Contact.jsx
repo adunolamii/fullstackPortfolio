@@ -2,7 +2,6 @@ import Navbar from "../Components/Navbar";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { PageTransition } from "../Components/PageTransition";
-import Flip from "react-reveal/Flip";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
 import Zoom from "react-reveal/Zoom";
@@ -28,6 +27,7 @@ function Contact() {
       );
     e.target.reset();
   };
+  sendEmail()
   return (
     <PageTransition>
      <Fade right> 
