@@ -82,7 +82,7 @@ function Projects() {
         <div className="tablet:max-w-md  max-w-screen-sd p-4 mx-auto  flex-col justify-center w-fulll h-full top-0">
           <div className="top-0" >
             <p className=" font-serif py-0 text-2xl font-bold inline  border-b-4 border-y-pink-500 top-0">
-              Portfolio
+              Portfolio.
             </p>
             <p className="top-0 py-2">
               Check out some of my Projects right here.

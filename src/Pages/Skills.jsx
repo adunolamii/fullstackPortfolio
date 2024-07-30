@@ -30,7 +30,7 @@ function Skills() {
     {
       id: 3,
       src: image3,
-      title: "TAILWIND CSS",
+      title: "TAILWIND",
       style: "shadow-blue-900",
     },
     {
@@ -66,10 +66,10 @@ function Skills() {
   ];
   return (
     <PageTransition>
-      {/* <Fade> */}
-      <div className=" w-full h-screen bg-gradient-to-b from-black to-gray-800  text-white top-0">
+   
+      <div className=" h-screen w-full  bg-gradient-to-b from-black to-gray-800 p-4 text-white">
         <p className=" font-serif text-2xl font-bold border-b-4 border-y-pink-500 inline top-0">
-          Experiences
+          Experiences.
         </p>
 
         {/* <Flip> */}

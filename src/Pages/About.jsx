@@ -46,9 +46,9 @@ function About() {
           {/* </Zoom> */}
 
         {/* // <Bounce> */}
-          <div className="flex justify-evenly  group-hover:rotate-90 duration-300">
+          <div className="mb-6 flex justify-evenly  group-hover:rotate-90 duration-300">
             <button
-              className=" font-serif rounded-2xl font-bold text-xl text-white bg-gradient-to-b from-pink-600 to-purple-900 px-6 my-8 hover:scale-110 duration-300"
+              className=" font-serif rounded-2xl font-bold text-xl text-white bg-gradient-to-b from-pink-600 to-purple-900 px-6  my-8 hover:scale-110 duration-300"
               onClick={() => {
                 navigate("/contact");
               }}
@@ -58,7 +58,7 @@ function About() {
             </button>
           </div>
         {/* </Bounce> */}
-        <Navbar className=" " />
+        <Navbar className=" bottom-0" />
       </div>
       {/* </Fade> */}
     </PageTransition>
