@@ -1,3 +1,5 @@
+import { BiFontFamily } from "react-icons/bi";
+
 export default {
   content: [  "./index.html",
   "./src/**/*.{js,ts,jsx,tsx}",],
@@ -9,6 +11,7 @@ export default {
     },
     extend: {},
   },
+  
   plugins: [],
 }
 

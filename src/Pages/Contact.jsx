@@ -3,6 +3,8 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { PageTransition } from "../Components/PageTransition";
 import Flip from "react-reveal/Flip";
+import Fade from "react-reveal/Fade";
+import Bounce from "react-reveal/Bounce";
 import Zoom from "react-reveal/Zoom";
 import Roll from 'react-reveal/Roll';
 
@@ -28,10 +30,11 @@ function Contact() {
   };
   return (
     <PageTransition>
+     <Fade right> 
        <div className=" h-screen w-full  bg-gradient-to-b from-black to-gray-800 p-4 text-white">
         <div className=" flex flex-col p-4 justify-center">
           <div>
-            <p className=" text-3xl font-bold inline border-b-4 border-y-pink-500">
+            <p className="  font-serif text-3xl font-bold inline border-b-4 border-y-pink-500">
               Contact
             </p>
 
@@ -61,12 +64,12 @@ function Contact() {
                 name=""
                 id=""
               ></textarea>
-              <Flip>
+              <Bounce>
                
-                <button className=" p-5 font-bold text-xl text-white bg-gradient-to-b from-pink-600 to-purple-900 px-6 py-4 my-4 hover:scale-110 duration-300">
+                <button className=" font-serif rounded-2xl p-5 font-bold text-xl text-white bg-gradient-to-b from-pink-600 to-purple-900 px-6 py-4 my-4 hover:scale-110 duration-300">
                   Send
                 </button>
-              </Flip>
+              </Bounce>
             </form>
           </div>
           </Roll>
@@ -76,7 +79,7 @@ function Contact() {
       </div> 
 
 
- 
+      </Fade>
     </PageTransition>
   );
 }

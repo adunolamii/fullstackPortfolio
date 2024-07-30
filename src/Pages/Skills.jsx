@@ -10,6 +10,7 @@ import image6 from "../Components/node.png";
 import image7 from "../Components/express.png";
 import image8 from "../Components/postman.png";
 import Flip from "react-reveal/Flip";
+import Fade from "react-reveal/Fade";
 
 function Skills() {
   const techs = [
@@ -65,8 +66,9 @@ function Skills() {
   ];
   return (
     <PageTransition>
+      <Fade>
       <div className=" w-full  bg-gradient-to-b from-black to-gray-800  text-white top-0">
-        <p className=" text-2xl font-bold border-b-4 border-y-pink-500 inline top-0">
+        <p className=" font-serif text-2xl font-bold border-b-4 border-y-pink-500 inline top-0">
           Experiences
         </p>
 
@@ -85,6 +87,7 @@ function Skills() {
         </Flip>
         <Navbar className="" />
       </div>
+      </Fade>
     </PageTransition>
   );
 }

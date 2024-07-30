@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 
 export const PageTransition = ({children}) => {
+
   return (
      <motion.div
           className="page"
@@ -18,7 +19,7 @@ export const PageTransition = ({children}) => {
          }}
          >
             {children}
-            
+      
         </motion.div>
      
     
