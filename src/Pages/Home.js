@@ -15,7 +15,7 @@ function Home() {
 
   return (
     <PageTransition>
-      <Fade left>
+      {/* <Fade left> */}
       <div className=" h-screen w-full  bg-gradient-to-b from-black to-gray-800 p-4 text-white">
         <div>
           <h4 className=" font-serif text-white py-1 text-xl font-bold inline border-b-4 border-y-pink-500 ">
@@ -36,13 +36,13 @@ function Home() {
               }}
             />
           </h3>
-          <Zoom>
+          {/* <Zoom> */}
             <h1 className=" text-white items-center px-10 font-extralight">
               This is my official Portfolio Website to showcase all my works
               related to Full-Stack Development.{" "}
             </h1>
-          </Zoom>
-          <Bounce>
+          {/* </Zoom>
+          <Bounce> */}
             <div className="flex justify-evenly group-hover:rotate-90 duration-300">
               <button
                 className=" font-serif rounded-2xl p-5 font-bold text-xl text-white bg-gradient-to-b from-pink-600 to-purple-900 px-6 py-2 my-8 hover:scale-110 duration-300"
@@ -54,19 +54,19 @@ function Home() {
                 <IoArrowForward className="text-bold text-white m-auto" />
               </button>
             </div>
-          </Bounce>
-          <Roll>
+          {/* </Bounce>
+          <Roll> */}
             <div className=" flex">
               <div className="bg-gradient-to-b from-pink-600 to-purple-900 rounded-2xl relative bg-blue-300 w-64 h-60 m-auto mb-6">
                 <img className=" -44 h-56 mt-2  m-auto object-cover  rounded-2xl" src={pic} alt="" />
               </div>
             </div>
-          </Roll>
+          {/* </Roll> */}
 
           <Navbar />
         </div>
       </div>
-      </Fade>
+      {/* </Fade> */}
     </PageTransition>
   );
 }

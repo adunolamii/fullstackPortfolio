@@ -4,7 +4,7 @@ import image1 from "../Components/event.png";
 import image2 from "../Components/real estate.jpg";
 import image3 from "../Components/movie.png";
 import image4 from "../Components/country.jpg";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 import { PageTransition } from "../Components/PageTransition";
 
 function Projects() {
@@ -77,7 +77,7 @@ function Projects() {
 
   return (
     <PageTransition>
-      <Fade left>
+      {/* <Fade left> */}
        <div className="tablet:max-w-full  gap-8 w-full bg-gradient-to-b from-black to-gray-800 p-4 text-white md:h-screen top-0">
         <div className="tablet:max-w-md  max-w-screen-sd p-4 mx-auto  flex-col justify-center w-fulll h-full top-0">
           <div className="top-0" >
@@ -209,7 +209,7 @@ function Projects() {
               </div>
               <div/>
               <div/>       
-              </Fade>
+              {/* </Fade> */}
       </PageTransition>
       
  );
