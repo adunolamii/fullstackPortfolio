@@ -67,7 +67,7 @@ function Skills() {
   return (
     <PageTransition>
       {/* <Fade> */}
-      <div className=" w-full  bg-gradient-to-b from-black to-gray-800  text-white top-0">
+      <div className=" w-full h-screen bg-gradient-to-b from-black to-gray-800  text-white top-0">
         <p className=" font-serif text-2xl font-bold border-b-4 border-y-pink-500 inline top-0">
           Experiences
         </p>
@@ -85,7 +85,7 @@ function Skills() {
             ))}
           </div>
        
-        <Navbar className="" />
+        <Navbar className=" " />
       </div>
       
     </PageTransition>

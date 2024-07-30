@@ -27,7 +27,7 @@ function Contact() {
       );
     e.target.reset();
   };
-  sendEmail()
+  // sendEmail()
   return (
     <PageTransition>
      {/* <Fade right>  */}
@@ -75,7 +75,7 @@ function Contact() {
           {/* </Roll> */}
         </div>
 
-        <Navbar className=" bottom-0" />
+        <Navbar className="" />
       </div> 
 
 
