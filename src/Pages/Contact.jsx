@@ -45,7 +45,7 @@ function Contact() {
             {/* </Zoom> */}
           </div>
           {/* <Roll> */}
-          <div className=" flex justify-center items-center py-4">
+          <div className=" flex justify-center  py-6">
             <form action="" className=" flex flex-col w-34 ">
               <input
                 type="text"
