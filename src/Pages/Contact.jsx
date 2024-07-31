@@ -42,8 +42,8 @@ function Contact() {
             
           </div>
          
-          <div className=" flex justify-center  py-6">
-            <form action="" className=" flex flex-col w-34 ">
+          <div className=" flex justify-center  py-6 px-3">
+            <form action="" className=" flex flex-col w-38 ml-10 ">
               <input
                 type="text"
                 placeholder="Enter your name"

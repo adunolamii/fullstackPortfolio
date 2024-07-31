@@ -30,7 +30,7 @@ function Skills() {
     {
       id: 3,
       src: image3,
-      title: "TAILWIND",
+      title: "TAILWIND CSS",
       style: "shadow-blue-900",
     },
     {
