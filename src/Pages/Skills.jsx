@@ -79,7 +79,7 @@ function Skills() {
                 key={id}
                 className={` h-28 top-0 shadow-md hover:scale-105 duration-500 rounded-lg ${style}`}
               >
-                <img src={src} alt="" className=" top-0 w-20 mx-auto" />
+                <img src={src} alt="" className=" top-0 w-24 mx-auto" />
                 <p className=" h-4 top-0 font-bold ">{title}</p>
               </div>
             ))}
