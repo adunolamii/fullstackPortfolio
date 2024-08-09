@@ -8,6 +8,7 @@ import Skills from './Pages/Skills';
 import About from './Pages/About';
 import Social from './Components/Social';
 import { AnimatePresence } from 'framer-motion';
+import ThemeContextProvider from './ThemeContextProvider';
 
 function App() {
   const location = useLocation()
@@ -15,7 +16,7 @@ function App() {
     <div className="App">
      
          <Social/>
-        
+         <ThemeContextProvider/>
          <AnimatePresence initial = {false}>
             <Routes location={location} key={location.pathname}>
                    <Route path="/"  element={<Home/>}/>
@@ -23,6 +24,7 @@ function App() {
                    <Route path="/skills" element={<Skills/>}/>
                    <Route path="/projects" element={<Projects/>}/>
                    <Route path="/contact" element={<Contact/>}/>
+                   <Route path="/themeContextProvider" element={<ThemeContextProvider/>}/>
 
             </Routes>
             </AnimatePresence>

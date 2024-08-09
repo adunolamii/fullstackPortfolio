@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { GoHome } from "react-icons/go";
 import { FaRegUser } from "react-icons/fa";
 import { MdAssignmentTurnedIn } from "react-icons/md";
 import { MdContactEmergency } from "react-icons/md";
 import { BsPersonWorkspace } from "react-icons/bs";
-
+// import { FaMoon } from "react-icons/fa";
+// import { FaSun } from "react-icons/fa";
+import { hasSelectionSupport } from '@testing-library/user-event/dist/utils';
+// import { ThemeCotext } from '../ThemeContextProvider';
 
 function NavItem({to, icon}) {
    return(
@@ -13,8 +16,8 @@ function NavItem({to, icon}) {
      {icon}
      </NavLink>
      );
-   }
-function Navbar() {
+    }
+   function Navbar() {
   return (
     <div className='sticky h-18'>
     <div className='h-12 rounded-3xl  bg-blue-400 w-80 m-auto backdrop-blur-3xl '>
@@ -24,11 +27,10 @@ function Navbar() {
         <NavItem to="/skills" icon={<BsPersonWorkspace/>} className='about'><button><BsPersonWorkspace className='text-white hover:scale-110 duration-200  text-xl  hover:to-orange-500'/></button></NavItem>
         <NavItem to="/projects" icon={<MdAssignmentTurnedIn/>} className='about'><button><MdAssignmentTurnedIn className='text-white hover:scale-110 duration-200  text-xl  hover:to-orange-500'/></button></NavItem>
         <NavItem to="/contact" icon={<MdContactEmergency/>} className='about'><button><MdContactEmergency className='text-white hover:scale-110 duration-200  text-xl  hover:to-orange-500'/></button></NavItem>
-
     </div>
     </div>
     </div>
   )
 }
 
-export default Navbar
+export default Navbar;

@@ -2,10 +2,6 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import { useNavigate } from "react-router-dom";
 import { IoArrowForward } from "react-icons/io5";
-// import Zoom from "react-reveal/Zoom";
-// import Roll from "react-reveal/Roll";
-// import Fade from "react-reveal/Fade";
-// import Bounce from "react-reveal/Bounce";
 import Typewriter from "typewriter-effect";
 import { PageTransition } from "../Components/PageTransition";
 import pic from "../Components/pic.jpg";
@@ -15,9 +11,9 @@ function Home() {
 
   return (
     <PageTransition>
-      {/* <Fade left> */}
       <div className=" h-screen w-full  bg-gradient-to-b from-black to-gray-800 p-4 text-white">
         <div>
+          
           <h4 className=" font-serif text-white py-1 text-xl font-bold inline border-b-4 border-y-pink-500 ">
             Hello!{" "}
             <span className="font-bold text- from-pink-600 to-purple-900">

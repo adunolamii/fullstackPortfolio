@@ -77,7 +77,7 @@ function Projects() {
 
   return (
     <PageTransition>
-      {/* <Fade left> */}
+     
        <div className="tablet:max-w-full  gap-8 w-full bg-gradient-to-b from-black to-gray-800 p-4 text-white md:h-screen top-0">
         <div className="tablet:max-w-md  max-w-screen-sd p-4 mx-auto  flex-col justify-center w-fulll h-full top-0">
           <div className="top-0" >

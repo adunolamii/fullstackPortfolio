@@ -41,11 +41,9 @@ function About() {
               </span>{" "}
               Development. I architect, develop, and deploy comprehensive applications from inception to completion, leveraging a diverse array of tools and technologies.{" "}
             </h1>
-            {/* </Fade> */}
+          
           </div>
-          {/* </Zoom> */}
-
-        {/* // <Bounce> */}
+        
           <div className=" flex justify-evenly  group-hover:rotate-90 duration-300">
             <button
               className=" font-serif rounded-2xl font-bold text-xl text-white bg-gradient-to-b from-pink-600 to-purple-900 px-6  my-8 hover:scale-110 duration-300"
@@ -57,7 +55,7 @@ function About() {
               <IoArrowForward className="text-bold text-white m-auto" />
             </button>
           </div>
-        {/* </Bounce> */}
+       
         <Navbar className=" bottom-0" />
       </div>
       {/* </Fade> */}
