@@ -9,8 +9,7 @@ import image5 from "../Components/github.png";
 import image6 from "../Components/node.png";
 import image7 from "../Components/express.png";
 import image8 from "../Components/postman.png";
-// import Flip from "react-reveal/Flip";
-// import Fade from "react-reveal/Fade";
+import image9 from "../Components/next.png"
 
 function Skills() {
   const techs = [
@@ -24,41 +23,49 @@ function Skills() {
     {
       id: 2,
       src: image1,
-      title: "REACT",
+      title: "REACT JS",
       style: "shadow-blue-700",
     },
+
     {
       id: 3,
+      src: image9,
+      title: "NEXT JS",
+      style: "shadow-blue-700",
+    },
+
+    {
+      id: 4,
       src: image3,
       title: "TAILWIND CSS",
       style: "shadow-blue-900",
     },
     {
-      id: 4,
+      id: 5,
       src: image6,
       title: "NODE JS",
       style: "shadow-green-500",
     },
     {
-      id: 5,
+      id: 6,
       src: image4,
       title: "MONGODB",
       style: "shadow-green-500",
     },
     {
-      id: 6,
+      id: 7,
       src: image7,
       title: "EXPRESS JS",
       style: "shadow-green-800",
     },
     {
-      id: 7,
+      id: 8,
       src: image5,
       title: "GITHUB",
       style: "shadow-green-800",
     },
     {
-      id: 8,
+      id: 9,
       src: image8,
       title: "POSTMAN",
       style: "shadow-red-800",
@@ -72,7 +79,7 @@ function Skills() {
           Experiences.
         </p>
 
-        {/* <Flip> */}
+        
           <div className=" w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center  px-16 sm:px-0 top-0">
             {techs.map(({ id, src, title, style }) => (
               <div

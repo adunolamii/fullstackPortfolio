@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import image1 from "../Components/event.png";
-import image2 from "../Components/real estate.jpg";
+// import image2 from "../Components/real estate.jpg";
 import image3 from "../Components/movie.png";
 import image4 from "../Components/country.jpg";
-// import Fade from "react-reveal/Fade";
+import image5 from "../Components/blog.png"
 import { PageTransition } from "../Components/PageTransition";
 
 function Projects() {
@@ -15,7 +15,7 @@ function Projects() {
       "_blank"
     );
   }
-  const handleEstateLink=()=>{
+  const handleblogApplicationLink=()=>{
     window.open("()",
       "_blank"
     );
@@ -58,11 +58,11 @@ function Projects() {
   const handleMovie = (url)=>{
     window.open(url,'_blank')
   }
-  const githubEstate =[
-    { url:"()"},
+  const githubblogApplication =[
+    { url:"(https://github.com/adunolamii/blogApp/)"},
    
   ];
-  const handleEstate = (url)=>{
+  const handleblogApplication = (url)=>{
     window.open(url,'_blank')
   }
 
@@ -121,23 +121,23 @@ function Projects() {
             {projects.map(({ id, src, href, download }) => (
               <div
                 key={id}
-                className="tablet:max-w-md top-0 shadow-md shadow-purple-600 rounded-lg"
+                className="tablet:max-w-md top-0 shadow-md shadow-white rounded-lg"
                
               >
                 <img
                  download={download}
                 //  target="_blank"
                  href={href}
-                  src={image2}
+                  src={image5}
                   alt=""
                   className="tablet:max-w-md w-full top-0 m-auto rounded-md duration-200 hover:scale-105"
                  
                 />
                 <div className="top-0 flex justify-center items-center">
-                  {githubEstate.map((link,index)=>(<button key={index} onClick={()=> handleEstate(link.url)} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  {githubblogApplication.map((link,index)=>(<button key={index} onClick={()=> handleblogApplication(link.url)} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                    Code
                   </button>))}
-                  <button onClick={handleEstateLink} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Live</button>
+                  <button onClick={handleblogApplicationLink} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Live</button>
 
 
                 </div>
@@ -149,7 +149,7 @@ function Projects() {
             {projects.map(({ id, src, href, download }) => (
               <div
                 key={id}
-                className="tablet:max-w-md top-0 shadow-md shadow-purple-600 rounded-lg"
+                className="tablet:max-w-md top-0 shadow-md shadow-green-600 rounded-lg"
                
               >
                 <img
@@ -177,7 +177,7 @@ function Projects() {
             {projects.map(({ id, src, href, download }) => (
               <div
                 key={id}
-                className="tablet:max-w-md top-0 shadow-md shadow-purple-600 rounded-lg"
+                className="tablet:max-w-md top-0 shadow-md shadow-gray-600 rounded-lg"
                
               >
                 <img
@@ -209,7 +209,7 @@ function Projects() {
               </div>
               <div/>
               <div/>       
-              {/* </Fade> */}
+              
       </PageTransition>
       
  );
