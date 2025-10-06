@@ -29,11 +29,11 @@ function About() {
               />
             </div>
           </div>
-        {/* </Roll> */}
+       
 
-        {/* <Zoom> */}
+      
           <div>
-            {/* <Fade> */}
+            
             <h1 className=" font-extralight text-white items-center justify-center px-12">
               I am an expert in{" "}
               <span className="font-bold text-pink-500 text-2xl">
